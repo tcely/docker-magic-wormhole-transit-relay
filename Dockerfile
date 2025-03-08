@@ -8,4 +8,5 @@ RUN set -eu; \
     pip install --upgrade pip && \
     pip install magic-wormhole-transit-relay
 
+EXPOSE 4001/tcp
 ENTRYPOINT ["/app/bin/entrypoint.sh", "twist", "transitrelay"]
