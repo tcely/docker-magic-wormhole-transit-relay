@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 # check=error=true
 
-FROM ghcr.io/tcely/docker-magic-wormhole-base AS magic-wormhole-transit-relay
+FROM ghcr.io/tcely/docker-magic-wormhole-base:nightly AS magic-wormhole-transit-relay
 
 USER root
 RUN set -eux; \
